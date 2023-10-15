@@ -1,5 +1,9 @@
-const sayHello = (name: string) => {
-    return `Hello, ${name}!`
+cosnt promptInput = async (text: string) => {
+    printLine(`\n${text}\n>`, false )
+    const input: string = await new Promise((resolve) => ProcessingInstruction.stdin.once('data', (data)=>
+    resolve(data.toString())))
 }
 
-console.log(sayHello('Michael Jackson'))
+const printLine = (text: string, breakLine: boolean = true) => {
+    process.stdout.write(text + (breakLine ? '\n' : ''))
+}
