@@ -10,7 +10,7 @@ export class EventListener {
     private readonly listeners: Listeners = {}
 
     add(listenerId: string, event: string, element: HTMLElement, handler: (e: Event) => void) {
-        this.listeners[listeneId] = {
+        this.listeners[listenerId] = {
             event,
             element,
             handler,
