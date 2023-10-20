@@ -1,8 +1,8 @@
 {
-    "compilerOptions" : {
-        "sourceMap": true,
-        "target": "ES2015",
-        "lib": ["DOM", "ESNext"],
+    "compilerOptions" : { //変更記述方法ルールの設定を行う
+        "sourceMap": true, 
+        "target": "ES2015",//EcmaScriptの定義 webpackの場合ES2015
+        "lib": ["DOM", "ESNext"],//デフォルトの型定義以外の設定
         "esModuleInterop": true,
         "strict": true,
         "forceConsistentCasingInFileNames": true,
